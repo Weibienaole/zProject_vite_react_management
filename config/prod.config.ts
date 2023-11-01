@@ -12,8 +12,8 @@ export default defineConfig(({ command }: any) => {
 	}
 })
 
-function buildOutputOptions(isBuild: boolean){
-	if(!isBuild) return {}
+function buildOutputOptions(isBuild: boolean) {
+	if (!isBuild) return {}
 	return {
 		output: {
 			chunkFileNames: 'assets/js/chunk_[name]-[hash:6].js', // 引入文件名的名称

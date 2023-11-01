@@ -53,13 +53,7 @@ export default defineConfig((props) => {
 		},
 		build: {
 			target: 'es6',
-			assetsInlineLimit: 4096, //小于此阈值 kb 的导入或引用资源将内联为 base64 编码
-			reportCompressedSize: false, // 禁用 gzip 压缩大小报告
-			// 开启 modulepreload 的 Polyfill
-			modulePreload: {
-				polyfill: true
-			},
-			polyfillModulePreload: true,
+			reportCompressedSize: false // 禁用 gzip 压缩大小报告
 		},
 		preview: {
 			port: 8040
